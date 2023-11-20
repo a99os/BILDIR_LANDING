@@ -12,7 +12,7 @@
         <div>
           <div>
             <h1
-              class="lg:text-[32px] text-[20px] lg:text-start text-center mt-5 lg:mt-[48px] font-semibold"
+              class="lg:text-[32px] text-[#454545] text-[20px] lg:text-start text-center mt-5 lg:mt-[48px] font-semibold"
             >
               <span class="text-[#40A4BD]">Bildir</span> Corporate Platform
               helps you
@@ -52,7 +52,7 @@
           </div>
           <div class="lg:mt-6 mt-10">
             <h1
-              class="lg:text-[24px] lg:text-start text-[20px] leading-[178%] text-center font-semibold"
+              class="lg:text-[24px] text-[#454545] lg:text-start text-[20px] leading-[178%] text-center font-semibold"
             >
               We offer programs for Employee Assistance and Workplace welfare to
               assist you in achieving:

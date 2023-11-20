@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#ffffffd9] backdrop-blur-[5px] w-screen fixed z-[10] h-[97px]">
+  <div class="bg-[#fff] backdrop-blur-[5px] w-screen fixed z-[10] h-[97px]">
     <!-- Dropdown menus -->
     <div
       id="dropdownHover1"

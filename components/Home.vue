@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative bg-[url('~/assets/images/Group39549.png')] overflow-x-hidden pt-[150px] lg:pt-[100px] h-screen bg-cover bg-bottom"
+    class="relative bg-[url('~/assets/images/Group39549.png')] overflow-x-hidden pt-[150px] lg:pt-[100px] h-screen lg:bg-cover bg-bottom"
   >
     <div id="introduction" class="absolute -top-[100px]"></div>
     <div class="container">
