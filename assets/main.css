@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+}
+
+.container {
+  max-width: 1280px;
+  font-family: "Lato" ;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Playfair Display";
+  background-color: #fbfcf8;
+
+  transition-duration: 800ms;
+}
+
+.sidebar {
+  background: #fff !important;
+  box-shadow: 0px 3.125011682510376px 35.1563835144043px 0px rgba(0, 0, 0, 0.08) !important;
+}
+.router-link-active {
+  color: #5d7285 !important;
+  font-weight: 400 !important;
+}
+.router-link-exact-active {
+  color: #09234f !important;
+  font-weight: 600 !important;
+  background-color: #fbfcf8;
+}
+.router-link-active > svg > path {
+  fill: #5d7285 !important;
+}
+.router-link-exact-active > svg > path {
+  fill: #09234f !important;
+}
+.router-link-active rect {
+  fill: #5d7285 !important;
+}
+.router-link-exact-active > svg > g > g > path {
+  fill: #09234f !important;
+}
