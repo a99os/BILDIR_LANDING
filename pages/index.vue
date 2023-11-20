@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[1800px]">
+  <div class="">
     <Header></Header>
     <Home></Home>
     <About></About>
