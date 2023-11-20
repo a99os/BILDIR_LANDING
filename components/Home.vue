@@ -1,7 +1,8 @@
 <template>
   <div
-    class="bg-[url('~/assets/images/Group39549.png')] overflow-x-hidden pt-[150px] lg:pt-[100px] h-screen bg-cover bg-bottom"
+    class="relative bg-[url('~/assets/images/Group39549.png')] overflow-x-hidden pt-[150px] lg:pt-[100px] h-screen bg-cover bg-bottom"
   >
+    <div id="introduction" class="absolute -top-[100px]"></div>
     <div class="container">
       <h1
         class="lg:text-[48px] text-[24px] text-center lg:text-start lg:mt-[48px] lg:w-[45%] leading-[134%] font-bold"
@@ -35,4 +36,3 @@
     </div>
   </div>
 </template>
-<style scoped></style>

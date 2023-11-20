@@ -9,14 +9,14 @@ html {
 
 .container {
   max-width: 1280px;
-  font-family: "Lato" ;
+  font-family: "Lato";
   padding: 0 40px;
   margin: 0 auto;
 }
 
 body {
   font-family: "Playfair Display";
-  background-color: #fbfcf8;
+  background-color: #fff;
 
   transition-duration: 800ms;
 }
