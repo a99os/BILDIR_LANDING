@@ -154,7 +154,7 @@
           >
             Blog </NuxtLink
           ><a
-            href="/#Adminstration"
+            href="https://www.bildir.uz/uz/login/"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#40A4BD] font-medium"
           >
             Adminstration
