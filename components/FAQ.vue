@@ -4,17 +4,17 @@
 
     <div class="container">
       <h1 class="font-['DM Sans'] text-center text-[36px] font-semibold">
-        Frequently asked questions
+        {{ $t("faqTitle") }}
       </h1>
       <h1
-        class="font-['DM Sans'] text-[#667085] text-center text-[24px] font-semibold"
+        class="font-['DM Sans'] mt-4 text-[#667085] text-center text-[24px] font-semibold"
       >
-        Everything you need to know about the product.
+        {{ $t("faqSubTitle") }}
       </h1>
 
       <div
         id="accordion-collapse"
-        class="mt-4 lg:mt-[54px] lg:w-[896px] lg:mx-auto"
+        class="lg:mt-[54px] mt-10 lg:w-[896px] lg:mx-auto"
         data-accordion="collapse"
       >
         <div class="bg-white acc mx-auto w-full">

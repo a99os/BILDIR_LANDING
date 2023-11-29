@@ -50,7 +50,7 @@
             href="#introduction"
             class="text-[20px] font-semibold leading-8 text-[#353535]"
           >
-            Introduction
+            {{ $t("Introduction") }}
           </a>
           <div class="h-[2px] w-full bg-black"></div>
           <a
@@ -58,7 +58,7 @@
             @click="hideModal"
             class="text-[20px] font-semibold leading-8 text-[#353535]"
           >
-            How it works
+            {{ $t("Howitworks") }}
           </a>
           <div class="h-[2px] w-full bg-black"></div>
           <a
@@ -66,7 +66,7 @@
             href="#Report-Submission"
             class="text-[20px] font-semibold leading-8 text-[#353535]"
           >
-            Report Submission
+            {{ $t("ReportSubmission") }}
           </a>
           <div class="h-[2px] w-full bg-black"></div>
           <NuxtLink
@@ -74,7 +74,7 @@
             to="#blog"
             class="text-[20px] font-semibold leading-8 text-[#353535]"
           >
-            Blog
+            {{ $t("Blog") }}
           </NuxtLink>
           <div class="h-[2px] w-full bg-black"></div>
           <a
@@ -82,7 +82,7 @@
             href="#Adminstration"
             class="text-[20px] font-semibold leading-8 text-[#40A4BD]"
           >
-            Adminstration
+            {{ $t("Adminstration") }}
           </a>
           <div class="h-[2px] w-full bg-black"></div>
         </div>
@@ -123,7 +123,7 @@
           class="px-[36px] py-[8px] text-white bg-[#40A4BD] hover:bg-[#50bbd6] text-[20px] text-center rounded-[8px]"
         >
           <!-- {{ $t("contactUs") }} -->
-          Contact Us
+          {{ $t("ContactUs") }}
         </a>
       </div>
     </div>
@@ -137,27 +137,27 @@
             href="/#introduction"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#353535] font-medium"
           >
-            Introduction </a
+            {{ $t("Introduction") }} </a
           ><a
             href="/#How-it-works"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#353535] font-medium"
           >
-            How it works </a
+            {{ $t("Howitworks") }} </a
           ><a
             href="/#Report-Submission"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#353535] font-medium"
           >
-            Report Submission </a
+            {{ $t("ReportSubmission") }}</a
           ><NuxtLink
             to="/blog"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#353535] font-medium"
           >
-            Blog </NuxtLink
+            {{ $t("Blog") }} </NuxtLink
           ><a
             href="https://www.bildir.uz/uz/login/"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#40A4BD] font-medium"
           >
-            Adminstration
+            {{ $t("Adminstration") }}
           </a>
           <button
             id="dropdownHoverButton1"
@@ -198,7 +198,7 @@
           class="px-[36px] lg:block hidden py-[8px] text-white bg-[#40A4BD] hover:bg-[#50bbd6] rounded-[8px]"
         >
           <!-- {{ $t("contactUs") }} -->
-          Contact Us
+          {{ $t("ContactUs") }}
         </a>
 
         <div class="lg:hidden">

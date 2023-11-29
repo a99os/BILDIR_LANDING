@@ -5,16 +5,18 @@
         class="flex text-[16px] justify-center text-[#6B7280] duration-300 gap-10 leading-6 font-['Inter']"
       >
         <li>
-          <a href="#Our-story" class="hover:text-[#000]">Our story</a>
+          <a href="#Our-story" class="hover:text-[#000]">{{ $t("story") }}</a>
         </li>
         <li>
-          <a href="#Pricing" class="hover:text-[#000]">Pricing</a>
+          <a href="#Pricing" class="hover:text-[#000]">{{ $t("pricing") }}</a>
         </li>
         <li>
-          <a href="#Blog" class="hover:text-[#000]">Blog</a>
+          <a href="#Blog" class="hover:text-[#000]">{{ $t("Blog") }}</a>
         </li>
         <li>
-          <a href="#Contact-us" class="hover:text-[#000]">Contact-us</a>
+          <a href="#Contact-us" class="hover:text-[#000]">{{
+            $t("ContactUs")
+          }}</a>
         </li>
       </ul>
 

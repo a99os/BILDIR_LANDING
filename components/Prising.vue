@@ -4,7 +4,7 @@
       <h1
         class="text-center text-[24px] lg:text-[52px] text-[#2B2B2B] font-bold leading-[130%]"
       >
-        Our pricing plans
+        {{ $t("prasing") }}
       </h1>
 
       <ul class="grid lg:grid-cols-3 gap-5 mt-10">
@@ -12,7 +12,7 @@
           <div class="flex px-10 items-center gap-5">
             <img src="~/assets/images/Group39553.png" />
             <div>
-              <h2>For individuals</h2>
+              <h2>{{ $t("prasing1Title") }}</h2>
               <h3>Basic</h3>
             </div>
           </div>
@@ -75,15 +75,15 @@
           <button
             class="w-[80%] block mt-10 py-[26px] rounded-[96px] bg-[#40A4BD] mx-auto"
           >
-            <p>Get started</p>
+            <p>{{ $t("getStart") }}</p>
           </button>
         </li>
         <li class="card1 py-10">
           <div class="flex px-10 items-center gap-5">
             <img src="~/assets/images/Group39554.png" />
             <div>
-              <h2 class="h2h2">For individuals</h2>
-              <h3 class="h3h3">Basic</h3>
+              <h2 class="h2h2">{{ $t("prasing2Title") }}</h2>
+              <h3 class="h3h3">Pro</h3>
             </div>
           </div>
 
@@ -145,15 +145,15 @@
           <button
             class="w-[80%] block mt-10 py-[26px] rounded-[96px] btn bg-[#fff] text-[#40A4BD] mx-auto"
           >
-            <p class="btn">Get started</p>
+            <p class="btn">{{ $t("getStart") }}</p>
           </button>
         </li>
         <li class="card py-10">
           <div class="flex px-10 items-center gap-5">
             <img src="~/assets/images/Group39555.png" />
             <div>
-              <h2>For individuals</h2>
-              <h3>Basic</h3>
+              <h2>{{ $t("prasing3Title") }}</h2>
+              <h3>Enterprise</h3>
             </div>
           </div>
 
@@ -215,7 +215,7 @@
           <button
             class="w-[80%] block mt-10 py-[26px] rounded-[96px] bg-[#40A4BD] mx-auto"
           >
-            <p>Get started</p>
+            <p>{{ $t("getStart") }}</p>
           </button>
         </li>
       </ul>

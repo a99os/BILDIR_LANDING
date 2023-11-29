@@ -10,15 +10,12 @@
       <h1
         class="text-center text-[#454545] text-[26px] lg:text-[40px] font-semibold"
       >
-        How it works
+        {{ $t("howTitle") }}
       </h1>
       <p
         class="text-[#323232] text-[16px] lg:text-[24px] leading-[174%] text-center mt-5 lg:w-[84%] mx-auto"
       >
-        Bildir is a channel for employees to anonymously disclose suggestions,
-        problems, concerns, misconduct and abuse. Bildir helps to build a
-        culture of transparency and openness in organizations and to stop
-        bullying and harassment.
+        {{ $t("howSubTitle") }}
       </p>
 
       <div
@@ -27,11 +24,7 @@
         <p
           class="text-[#323232] text-[24px] leading-[150%] w-[55%] mx-auto text-medium text-center mt-5"
         >
-          “Opening up may be difficult and challenging , which is why Bildir's
-          Corporate platform provide opportunities to be heard without judgment.
-          This allows us to become sole corporate entity capable of resolving
-          internal conflicts, having meaningful conversations, and builds better
-          connections”.
+          {{ $t("howContent") }}
         </p>
       </div>
     </div>
