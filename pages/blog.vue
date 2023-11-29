@@ -1,11 +1,8 @@
 <template>
   <div class="">
     <Header></Header>
-    <Home />
-    <About />
-    <How></How>
-    <Benifits />
-    <Prising />
+
+    <BlogContent />
     <Blog />
     <FAQ />
     <Footer></Footer>
@@ -14,7 +11,7 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: "BILDIR",
+  title: "Blog | BILDIR",
   ogTitle: "My Amazing Site",
   description: "This is my amazing site, let me tell you all about it.",
   ogDescription: "This is my amazing site, let me tell you all about it.",

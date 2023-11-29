@@ -1,5 +1,9 @@
 <template>
-  <div class="bg-[url('~/assets/images/how.png')] w-full bg-cover py-[50px]">
+  <div
+    class="relative bg-[url('~/assets/images/how.png')] w-full bg-cover py-[50px]"
+  >
+    <div id="How-it-works" class="absolute -top-[100px]"></div>
+
     <div class="container">
       <img src="~/assets/images/Group39533.png" class="lg:hidden mx-auto" />
 

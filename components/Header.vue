@@ -69,13 +69,13 @@
             Report Submission
           </a>
           <div class="h-[2px] w-full bg-black"></div>
-          <a
+          <NuxtLink
             @click="hideModal"
-            href="#Blog"
+            to="#blog"
             class="text-[20px] font-semibold leading-8 text-[#353535]"
           >
             Blog
-          </a>
+          </NuxtLink>
           <div class="h-[2px] w-full bg-black"></div>
           <a
             @click="hideModal"
@@ -129,32 +129,32 @@
     </div>
     <div class="container">
       <div class="flex justify-between lg:gap-[50px] h-[97px] items-center">
-        <a href="/" class="">
+        <a href="/" class="lg:scale-150">
           <img src="~/assets/images/logo.svg" />
         </a>
         <div class="hidden gap-[30px] lg:flex items-center">
           <a
-            href="#introduction"
+            href="/#introduction"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#353535] font-medium"
           >
             Introduction </a
           ><a
-            href="#How-it-works"
+            href="/#How-it-works"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#353535] font-medium"
           >
             How it works </a
           ><a
-            href="#Report-Submission"
+            href="/#Report-Submission"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#353535] font-medium"
           >
             Report Submission </a
-          ><a
-            href="#Blog"
+          ><NuxtLink
+            to="/blog"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#353535] font-medium"
           >
-            Blog </a
+            Blog </NuxtLink
           ><a
-            href="#Adminstration"
+            href="/#Adminstration"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#40A4BD] font-medium"
           >
             Adminstration
