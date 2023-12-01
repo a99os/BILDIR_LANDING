@@ -217,6 +217,7 @@ import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import { initFlowbite } from "flowbite";
 import { useI18n } from "vue-i18n";
+import AOS from "aos";
 
 let route = useRoute();
 let locale = ref(useI18n({ useScope: "global" }).locale);
@@ -240,6 +241,7 @@ function selectLangEl(e) {
 onMounted(() => {
   locale.value = localStorage.getItem("lang") || "en";
   initFlowbite();
+  AOS.init();
 });
 </script>
 <style></style>

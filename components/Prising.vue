@@ -1,14 +1,21 @@
 <template>
-  <div>
+  <div class="py-10">
     <div class="container">
       <h1
+        data-aos="fade-left"
+        data-aos-duration="500"
         class="text-center text-[24px] lg:text-[52px] text-[#2B2B2B] font-bold leading-[130%]"
       >
         {{ $t("prasing") }}
       </h1>
 
       <ul class="grid lg:grid-cols-3 gap-5 mt-10">
-        <li class="card py-10">
+        <li
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="0"
+          class="card py-10"
+        >
           <div class="flex px-10 items-center gap-5">
             <img src="~/assets/images/Group39553.png" />
             <div>
@@ -78,7 +85,12 @@
             <p>{{ $t("getStart") }}</p>
           </button>
         </li>
-        <li class="card1 py-10">
+        <li
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="400"
+          class="card1 py-10"
+        >
           <div class="flex px-10 items-center gap-5">
             <img src="~/assets/images/Group39554.png" />
             <div>
@@ -148,7 +160,12 @@
             <p class="btn">{{ $t("getStart") }}</p>
           </button>
         </li>
-        <li class="card py-10">
+        <li
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="800"
+          class="card py-10"
+        >
           <div class="flex px-10 items-center gap-5">
             <img src="~/assets/images/Group39555.png" />
             <div>
@@ -222,6 +239,15 @@
     </div>
   </div>
 </template>
+<script setup>
+import { onMounted, ref } from "vue";
+
+import AOS from "aos";
+
+onMounted(() => {
+  AOS.init();
+});
+</script>
 
 <style scoped>
 .h8h8 {
