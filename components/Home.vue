@@ -41,8 +41,8 @@
       <img src="~/assets/images/Group39548.png" class="lg:hidden" />
     </div>
     <img
-      src="~/assets/images/Union.png"
-      class="absolute scale-[10] lg:scale-[5.1] lg:-bottom-10 -bottom-4 moving-image"
+      src="~/assets/images/Group395471.svg"
+      class="absolute scale-[10] lg:scale-[3.1] lg:bottom-[40px] bottom-10 moving-image"
     />
   </div>
 </template>

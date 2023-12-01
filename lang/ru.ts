@@ -4,7 +4,7 @@ export default {
   ReportSubmission: "Отправка отчета",
   Blog: "Блог",
   Adminstration: "Администрация",
-  ContactUs: "Свяжитесь с нами",
+  ContactUs: "Регистрация",
   homeTitle1: "Информирование о нарушениях",
   homeTitle2: "Платформа для бизнеса",
   home1: "Простая настройка",

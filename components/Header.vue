@@ -119,7 +119,7 @@
         </div>
         <a
           @click="hideModal"
-          href="#contact-us"
+          href="https://www.bildir.uz/uz/sign-up/"
           class="px-[36px] py-[8px] text-white bg-[#40A4BD] hover:bg-[#50bbd6] text-[20px] text-center rounded-[8px]"
         >
           <!-- {{ $t("contactUs") }} -->
@@ -194,7 +194,7 @@
         </div>
 
         <a
-          href="#contact-us"
+          href="https://www.bildir.uz/uz/sign-up/"
           class="px-[36px] lg:block hidden py-[8px] text-white bg-[#40A4BD] hover:bg-[#50bbd6] rounded-[8px]"
         >
           <!-- {{ $t("contactUs") }} -->

@@ -4,7 +4,7 @@ export default {
   ReportSubmission: "Report Submission",
   Blog: "Blog",
   Adminstration: "Adminstration",
-  ContactUs: "Contact Us",
+  ContactUs: "Registration",
   homeTitle1: "Whistleblowing",
   homeTitle2: "Platform for business",
   home1: "Easy set up",

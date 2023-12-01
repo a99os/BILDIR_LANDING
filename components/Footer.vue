@@ -2,7 +2,7 @@
   <div class="py-10">
     <div class="container">
       <ul
-        class="flex text-[16px] justify-center text-[#6B7280] duration-300 gap-10 leading-6 font-['Inter']"
+        class="flex text-[16px] justify-center text-[#6B7280] duration-300 flex-col lg:flex-row justif-center items-center gap-5 lg:gap-10 leading-6 font-['Inter']"
       >
         <li>
           <a href="#Our-story" class="hover:text-[#000]">{{ $t("story") }}</a>
