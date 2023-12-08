@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <Header></Header>
-    <Home />
+    <Header class="fixed z-[30]"></Header>
+    <Home class="relative z-[29]"/>
     <About />
     <How></How>
     <Benifits />

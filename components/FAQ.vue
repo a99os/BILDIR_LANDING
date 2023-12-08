@@ -1,5 +1,6 @@
 <template>
   <div class="relative lg:py-[100px]">
+    <div id="Report-Submission" class="absolute -top-[0px]"></div>
     <div id="FAQ" class="absolute -top-[10%]"></div>
 
     <div class="container">

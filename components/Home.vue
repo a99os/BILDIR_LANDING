@@ -1,11 +1,12 @@
 <template>
   <div
-    class="relative overflow-hidden lg:bg-[url('~/assets/images/Group39547.png')] bg-right pt-[150px] lg:pt-[100px] h-screen"
+    class="relative overflow-hidden z-10 bg-right pt-[150px] lg:pt-[100px] h-screen"
   >
+    <img class="absolute w-full hidden lg:block" src="~/assets/images/Group39547.png" />
     <div id="introduction" class="absolute -top-[100px]"></div>
-    <div class="container overflow-hidden">
+    <div class="container relative z-20 overflow-hidden">
       <h1
-        class="lg:text-[48px] text-[24px] text-center lg:text-start lg:mt-[48px] lg:w-[100%] leading-[134%] font-bold"
+        class="lg:text-[48px] text-[24px] lg:text-start lg:mt-[48px] lg:w-[100%] leading-[134%] font-bold"
       >
         <span class="text-[#40A4BD]">Whistleblowing</span>
         {{ $t("homeTitle2") }}

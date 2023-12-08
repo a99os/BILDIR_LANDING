@@ -119,7 +119,7 @@
         </div>
         <a
           @click="hideModal"
-          href="https://www.bildir.uz/uz/sign-up/"
+          href="http://localhost:8000//uz/sign-up/"
           class="px-[36px] py-[8px] text-white bg-[#40A4BD] hover:bg-[#50bbd6] text-[20px] text-center rounded-[8px]"
         >
           <!-- {{ $t("contactUs") }} -->
@@ -154,7 +154,7 @@
           >
             {{ $t("Blog") }} </NuxtLink
           ><a
-            href="https://www.bildir.uz/uz/login/"
+            href="http://localhost:8000//uz/login/"
             class="text-[18px] duration-300 hover:border-[#40A4BD] border-b-2 border-[#fff] text-[#40A4BD] font-medium"
           >
             {{ $t("Adminstration") }}
@@ -194,7 +194,7 @@
         </div>
 
         <a
-          href="https://www.bildir.uz/uz/sign-up/"
+          href="http://localhost:8000//uz/sign-up/"
           class="px-[36px] lg:block hidden py-[8px] text-white bg-[#40A4BD] hover:bg-[#50bbd6] rounded-[8px]"
         >
           <!-- {{ $t("contactUs") }} -->
