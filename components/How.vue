@@ -5,7 +5,7 @@
     <div id="How-it-works" class="absolute -top-[100px]"></div>
 
     <div class="container">
-      <img src="~/assets/images/Group39533.png" class="lg:hidden mx-auto" />
+      <img src="~/assets/images/Group39537.png" class="lg:hidden mx-auto" />
 
       <h1
         data-aos="fade-right"
