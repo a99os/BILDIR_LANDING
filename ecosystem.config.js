@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "birdir",
+      name: "bildir",
       port: "3041",
       exec_mode: "cluster",
       instances: "max",
