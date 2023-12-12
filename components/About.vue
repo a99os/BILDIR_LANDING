@@ -20,7 +20,7 @@
             <h1
               data-aos="fade-left"
               data-aos-duration="500"
-              class="lg:text-[32px] text-[#454545] text-[20px] mt-5 lg:mt-[48px] font-semibold"
+              class="lg:text-[24px] text-[#454545] text-[20px] mt-5 lg:mt-[48px] font-semibold"
             >
               <span class="text-[#40A4BD]"> {{ $t("aboutHelpTitle1") }} </span>
               {{ $t("aboutHelpTitle2") }}

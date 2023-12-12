@@ -11,7 +11,7 @@ export default {
   home2: "Ma'lumotlarni himoya qilish va anonimlik",
   home3: "O'zbekistonda birinchi xabar tarqatish platformasi",
   home4:
-    "Korxonalar va ularning xodimlariga eng yuqori samaradorlik darajasida ishlashni davom ettirishga imkon beruvchi echimlar.",
+    "Korxonalar va ularning xodimlariga eng yuqori samaradorlik darajasida ishlashni davom ettirishga imkon beruvchi echimlar",
 
   aboutTitle:
     "Keling, butun dunyo bo'ylab xodimlarga o'z fikrlarini bildirishga imkon beraylik!",
@@ -28,11 +28,11 @@ export default {
     "Ishchi kuchingizning salomatligi, e'tibori va samaradorligini saqlang",
   aboutOfferItem2:
     "Xususiy/Xavfsiz inqirozlarni boshqarish va ishonch bilan o'zgartirish",
-  aboutOfferItem3: "Ishdagi baxtni, faollikni, hamkorlikni oshiring.",
+  aboutOfferItem3: "Ishdagi baxtni, faollikni, hamkorlikni oshiring",
   howTitle: "Bu qanday ishlaydi",
   howSubTitle:
-    "Bildir - bu xodimlar uchun takliflar, muammolar, tashvishlar, noto'g'ri xatti-harakatlar va suiiste'molliklarni anonim ravishda oshkor qilish uchun kanaldir. Bildir tashkilotlarda shaffoflik va oshkoralik madaniyatini shakllantirishga, bezorilik va ta'qiblarni to'xtatishga yordam beradi.",
-  howContent: `"Ochish qiyin va qiyin bo'lishi mumkin, shuning uchun Bildirning Korporativ platformasi hukm qilmasdan eshitish imkoniyatini beradi. Bu bizga ichki nizolarni hal qilishga, mazmunli suhbatlar o'tkazishga va yaxshi aloqalarni o'rnatishga qodir bo'lgan yagona korporativ shaxs bo'lish imkonini beradi".`,
+    "Bildir - bu xodimlar uchun takliflar, muammolar, tashvishlar, noto'g'ri xatti-harakatlar va suiiste'molliklarni anonim ravishda oshkor qilish uchun kanaldir. Bildir tashkilotlarda shaffoflik va oshkoralik madaniyatini shakllantirishga, bezorilik va ta'qiblarni to'xtatishga yordam beradi",
+  howContent: `"Ochish qiyin va qiyin bo'lishi mumkin, shuning uchun Bildirning Korporativ platformasi hukm qilmasdan eshitish imkoniyatini beradi. Bu bizga ichki nizolarni hal qilishga, mazmunli suhbatlar o'tkazishga va yaxshi aloqalarni o'rnatishga qodir bo'lgan yagona korporativ shaxs bo'lish imkonini beradi"`,
   benifitsTitle: "Bizning platformamizning afzalliklari",
   benifitsItem1: "Bir daqiqada ro'yxatdan o'ting",
   benifitsItem2: "Hisobotlarni qabul qilish",
@@ -43,7 +43,7 @@ export default {
   prasing3Title: "Katta kompaniyalar uchun",
   getStart: "Boshlash",
   faqTitle: "Ko'p beriladigan savollar",
-  faqSubTitle: "Mahsulot haqida bilishingiz kerak bo'lgan hamma narsa.",
+  faqSubTitle: "Mahsulot haqida bilishingiz kerak bo'lgan hamma narsa",
   story: "Bizning hikoyamiz",
   pricing: "Narxlar",
 };

@@ -11,7 +11,7 @@ export default {
   home2: " Data protection and anonymity",
   home3: "The first Whistleblowing Platform in Uzbekistan",
   home4:
-    "Solutions that allow businesses and their employees to continue operating at their peak performance levels.",
+    "Solutions that allow businesses and their employees to continue operating at their peak performance levels",
 
   aboutTitle: "Let's empower employees around the world to speak up!",
   aboutHelpTitle1: "Bildir",
@@ -27,12 +27,12 @@ export default {
     "Maintain your workforce's health, attention, and productivity",
   aboutOfferItem2:
     "Private/ Secure crises management  and change with assurance",
-  aboutOfferItem3: "Increase happiness, engagement, cooperation at work .",
+  aboutOfferItem3: "Increase happiness, engagement, cooperation at work",
   howTitle: "How it works",
   howSubTitle:
-    "Bildir is a channel for employees to anonymously disclose suggestions, problems, concerns, misconduct and abuse. Bildir helps to build a culture of transparency and openness in organizations and to stop bullying and harassment.",
+    "Bildir is a channel for employees to anonymously disclose suggestions, problems, concerns, misconduct and abuse. Bildir helps to build a culture of transparency and openness in organizations and to stop bullying and harassment",
   howContent:
-    "“Opening up may be difficult and challenging , which is why Bildir's Corporate platform provide opportunities to be heard without judgment. This allows us to become sole corporate entity capable of resolving internal conflicts, having meaningful conversations, and builds better connections”.",
+    "“Opening up may be difficult and challenging , which is why Bildir's Corporate platform provide opportunities to be heard without judgment. This allows us to become sole corporate entity capable of resolving internal conflicts, having meaningful conversations, and builds better connections”",
   benifitsTitle: "Benefits from our platform",
   benifitsItem1: "Sign up in a minute",
   benifitsItem2: "Receive reports",
@@ -43,7 +43,7 @@ export default {
   prasing3Title: "For big companies",
   getStart: "Get started",
   faqTitle: "Frequently asked questions",
-  faqSubTitle: "Everything you need to know about the product.",
+  faqSubTitle: "Everything you need to know about the product",
   story: "Our story",
   pricing: "Pricing",
 };
