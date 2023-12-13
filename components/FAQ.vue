@@ -1,10 +1,10 @@
 <template>
-  <div class="relative lg:py-[100px]">
+  <div class="relative ">
     <div id="Report-Submission" class="absolute -top-[0px]"></div>
     <div id="FAQ" class="absolute -top-[10%]"></div>
 
     <div class="container">
-      <h1 class="font-['DM Sans'] text-center text-[36px] font-semibold">
+      <h1 class="font-['DM Sans'] text-[#454545] text-center text-[36px] font-semibold">
         {{ $t("faqTitle") }}
       </h1>
       <h1

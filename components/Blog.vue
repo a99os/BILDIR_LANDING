@@ -4,11 +4,11 @@
   >
     <div class="container py-[100px]">
       <h1
-        class="text-center text-[24px] lg:text-[52px] text-[#2B2B2B] font-bold leading-[130%]"
+        class="text-center text-[24px] lg:text-[52px] text-[#454545] font-bold leading-[130%]"
       >
         Our blog
       </h1>
-      <ul class="lg:grid-cols-3 grid gap-4">
+      <ul class="lg:grid-cols-3 grid gap-4 mt-10">
         <li class="p-6">
           <img class="w-full" src="~/assets/images/Image.png" />
           <NuxtLink to="/blog" class="flex w-full justify-between mt-8">

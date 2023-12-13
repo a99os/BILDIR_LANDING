@@ -4,7 +4,7 @@
       <h1
         data-aos="fade-left"
         data-aos-duration="500"
-        class="text-center text-[24px] lg:text-[52px] text-[#2B2B2B] font-bold leading-[130%]"
+        class="text-center text-[24px] lg:text-[52px] text-[#454545] font-bold leading-[130%]"
       >
         {{ $t("prasing") }}
       </h1>

@@ -4,7 +4,7 @@
       <h1
         data-aos="fade-right"
         data-aos-duration="500"
-        class="lg:text-[40px] text-[24px] lg:px-[180px] lg:leading-[130%] font-bold text-center"
+        class="lg:text-[40px] text-[24px] lg:px-[180px] text-[#454545] lg:leading-[130%] font-bold text-center"
       >
         {{ $t("aboutTitle") }}
       </h1>
@@ -68,7 +68,7 @@
             class="lg:mt-6 mt-6"
           >
             <h1
-              class="lg:text-[24px] text-[#000] lg:text-start text-[18px] leading-[130%] lg:leading-[178%] font-semibold"
+              class="lg:text-[24px] text-[#454545] lg:text-start text-[18px] leading-[130%] lg:leading-[178%] font-semibold"
             >
               {{ $t("aboutOfferTitle") }}
             </h1>
