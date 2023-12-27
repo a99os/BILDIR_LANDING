@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "/Users/abbosashirboyev/Desktop/MyProjects/BILDIR_LANDING/node_modules/nuxt/dist/app/entry.js": {
+  "C:/Users/saido/OneDrive/Desktop/bildir_fullstack/BILDIR_LANDING/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "/Users/abbosashirboyev/Desktop/MyProjects/BILDIR_LANDING/node_modules/nuxt/dist/app/entry.js"
+    "file": "C:/Users/saido/OneDrive/Desktop/bildir_fullstack/BILDIR_LANDING/node_modules/nuxt/dist/app/entry.js"
   }
 }

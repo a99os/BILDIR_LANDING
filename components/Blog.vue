@@ -2,95 +2,61 @@
   <div
     class="bg-[url('~/assets/images/Background.png')] bg-cover bg-center py-[100px]"
   >
-    <div class="container py-[100px]">
+  <div class="container py-[100px]">
       <h1
-        class="text-center text-[24px] lg:text-[52px] text-[#454545] font-bold leading-[130%]"
+        class="text-center text-[24px] lg:text-[52px] text-[#2B2B2B] font-bold leading-[130%]"
       >
-        Our blog
+        {{ $t("ourBlog") }}
       </h1>
-      <ul class="lg:grid-cols-3 grid gap-4 mt-10">
-        <li class="p-6">
-          <img class="w-full" src="~/assets/images/Image.png" />
+      <ul class="lg:grid-cols-3 grid gap-4">
+        <li v-for="blog in blogs" :key="blog.id"
+        class="p-6">
+          <img class="w-full" :src="blog.image" />
           <NuxtLink to="/blog" class="flex w-full justify-between mt-8">
             <h1
               class="text-[24px] leading-[32px] w-[80%] items-center text-[#2D2D2D] font-semibold"
             >
-              Lorem Impsum dolor sit amet
+            {{ blog.title  }}
             </h1>
             <img class="h-[30px]" src="~/assets/images/arrow-up-right.png" />
           </NuxtLink>
           <p class="mt-3">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit dolor posuere
-            vel venenatis eu sit massa volutpat.
+          {{ blog.description.slice(0,60) + '...'  }}
           </p>
 
           <div class="flex mt-10 gap-4">
             <img
               class="w-10 h-10 rounded-full"
-              src="~/assets/images/Avatar.png"
+              :src="blog.author_profile_image"
             />
             <div>
-              <h2>Yulduz Normuradova</h2>
-              <h3>20 Jan 2022</h3>
+              <h2>{{blog.author}}</h2>
+              <h3>{{ blog.date_formatted }}</h3>
             </div>
           </div>
         </li>
-        <li class="p-6">
-          <img class="w-full" src="~/assets/images/Image-1.png" />
-          <NuxtLink to="/blog" class="flex w-full justify-between mt-8">
-            <h1
-              class="text-[24px] leading-[32px] w-[80%] items-center text-[#2D2D2D] font-semibold"
-            >
-              Lorem Impsum dolor sit amet
-            </h1>
-            <img class="h-[30px]" src="~/assets/images/arrow-up-right.png" />
-          </NuxtLink>
-          <p class="mt-3">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit dolor posuere
-            vel venenatis eu sit massa volutpat.
-          </p>
-
-          <div class="flex mt-10 gap-4">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="~/assets/images/Avatar-1.png"
-            />
-            <div>
-              <h2>Yulduz Normuradova</h2>
-              <h3>20 Jan 2022</h3>
-            </div>
-          </div>
-        </li>
-        <li class="p-6">
-          <img class="w-full" src="~/assets/images/Image-2.png" />
-          <NuxtLink to="/blog" class="flex w-full justify-between mt-8">
-            <h1
-              class="text-[24px] leading-[32px] w-[80%] items-center text-[#2D2D2D] font-semibold"
-            >
-              Lorem Impsum dolor sit amet
-            </h1>
-            <img class="h-[30px]" src="~/assets/images/arrow-up-right.png" />
-          </NuxtLink>
-          <p class="mt-3">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit dolor posuere
-            vel venenatis eu sit massa volutpat.
-          </p>
-
-          <div class="flex mt-10 gap-4">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="~/assets/images/Avatar-2.png"
-            />
-            <div>
-              <h2>Yulduz Normuradova</h2>
-              <h3>20 Jan 2022</h3>
-            </div>
-          </div>
-        </li>
+        
       </ul>
     </div>
   </div>
 </template>
+<script  setup>
+
+import axios from "~/api/axios-drf";
+let blogs = ref([]);
+let language = process.client ? localStorage.getItem("lang") : null;
+async function getBlog() {
+  const res = await axios.get(`/blogs/${language}`);
+  console.log(res.data);
+  blogs.value = res.data.blogs;
+}
+
+onMounted(() => {
+  getBlog();
+});
+
+
+</script>
 <style scoped>
 h3 {
   color: #6f6f6f;

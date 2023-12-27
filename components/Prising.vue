@@ -20,21 +20,20 @@
             <img src="~/assets/images/Group39553.png" />
             <div>
               <h2>{{ $t("prasing1Title") }}</h2>
-              <h3>Basic</h3>
+              <h3>{{$t("pricing1Name")}}</h3>
             </div>
           </div>
 
           <h4 class="px-10 mt-[18px]">
-            Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing
-            elit.
+            {{ $t("pricing1Description") }}
           </h4>
 
           <div class="flex px-10 gap-[10px] items-center mt-[18px]">
-            <p>$99</p>
+            <p>${{ $t("pricing1Price")}}</p>
             <pp>/monthly</pp>
           </div>
 
-          <h5 class="px-10 mt-[17px]">What’s included</h5>
+          <h5 class="px-10 mt-[17px]">{{$t("pricing1Header")}}</h5>
 
           <ul class="mt-6 px-10 mx-auto">
             <li class="flex items-center gap-2 mt-4">
@@ -43,7 +42,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{ $t("pricing1Item1") }}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -51,7 +50,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{$t("pricing1Item2")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -59,7 +58,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{$t("pricing1Item3")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -67,7 +66,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{$t("pricing1Item4")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -75,7 +74,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{$t("pricing1Item5")}}</h6>
             </li>
           </ul>
 
@@ -95,21 +94,20 @@
             <img src="~/assets/images/Group39554.png" />
             <div>
               <h2 class="h2h2">{{ $t("prasing2Title") }}</h2>
-              <h3 class="h3h3">Pro</h3>
+              <h3 class="h3h3">{{ $t("pricing2Name")}}</h3>
             </div>
           </div>
 
           <h4 class="px-10 h4h4 mt-[18px]">
-            Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing
-            elit.
+            {{ $t("pricing2Description")}}
           </h4>
 
           <div class="flex px-10 gap-[10px] items-center mt-[18px]">
-            <p class="h5h5">$199</p>
+            <p class="h5h5">{{ $t("pricing2Price")}}</p>
             <pp class="h6h6">/monthly</pp>
           </div>
 
-          <h5 class="h7h7 px-10 mt-[17px]">What’s included</h5>
+          <h5 class="h7h7 px-10 mt-[17px]">{{ $t("pricing2Header") }}</h5>
 
           <ul class="mt-6 px-10 mx-auto">
             <li class="flex items-center gap-2 mt-4">
@@ -118,7 +116,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="h8h8">Lorem ipsum dolor sit amet</h6>
+              <h6 class="h8h8">{{$t("pricing2Item1")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -126,7 +124,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="h8h8">Lorem ipsum dolor sit amet</h6>
+              <h6 class="h8h8">{{$t("pricing2Item2")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -134,7 +132,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="h8h8">Lorem ipsum dolor sit amet</h6>
+              <h6 class="h8h8">{{$t("pricing2Item3")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -142,7 +140,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="h8h8">Lorem ipsum dolor sit amet</h6>
+              <h6 class="h8h8">{{$t("pricing2Item4")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -150,7 +148,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="h8h8">Lorem ipsum dolor sit amet</h6>
+              <h6 class="h8h8">{{$t("pricing2Item5")}}</h6>
             </li>
           </ul>
 
@@ -170,21 +168,20 @@
             <img src="~/assets/images/Group39555.png" />
             <div>
               <h2>{{ $t("prasing3Title") }}</h2>
-              <h3>Enterprise</h3>
+              <h3>{{$t("pricing3Name")}}</h3>
             </div>
           </div>
 
           <h4 class="px-10 mt-[18px]">
-            Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing
-            elit.
+            {{$t("pricing3Description")}}
           </h4>
 
           <div class="flex px-10 gap-[10px] items-center mt-[18px]">
-            <p>$399</p>
+            <p>{{$t("pricing3Price")}}</p>
             <pp>/monthly</pp>
           </div>
 
-          <h5 class="px-10 mt-[17px]">What’s included</h5>
+          <h5 class="px-10 mt-[17px]">{{$t("pricing3Header")}}</h5>
 
           <ul class="mt-6 px-10 mx-auto">
             <li class="flex items-center gap-2 mt-4">
@@ -193,7 +190,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{$t("pricing3Item1")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -201,7 +198,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{$t("pricing3Item2")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -209,7 +206,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{$t("pricing3Item3")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -217,7 +214,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{$t("pricing3Item4")}}</h6>
             </li>
             <li class="flex items-center gap-2 mt-4">
               <div
@@ -225,7 +222,7 @@
               >
                 <i class="bx bx-check text-white mx-auto text-xl"></i>
               </div>
-              <h6 class="">Lorem ipsum dolor sit amet</h6>
+              <h6 class="">{{$t("pricing3Item5")}}</h6>
             </li>
           </ul>
 

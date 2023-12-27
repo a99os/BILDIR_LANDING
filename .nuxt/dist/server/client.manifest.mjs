@@ -1,1 +1,1 @@
-export { default } from "file:///Users/abbosashirboyev/Desktop/MyProjects/BILDIR_LANDING/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///C:/Users/saido/OneDrive/Desktop/bildir_fullstack/BILDIR_LANDING/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

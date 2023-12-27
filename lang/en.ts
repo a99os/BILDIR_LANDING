@@ -1,49 +1,87 @@
-export default {
-  Introduction: "Introduction",
-  Howitworks: "How it works",
-  ReportSubmission: "Report Submission",
-  Blog: "Blog",
-  Adminstration: "Adminstration",
-  ContactUs: "Registration",
-  homeTitle1: "Whistleblowing",
-  homeTitle2: "Platform for business",
-  home1: "Easy set up",
-  home2: " Data protection and anonymity",
-  home3: "The first Whistleblowing Platform in Uzbekistan",
-  home4:
-    "Solutions that allow businesses and their employees to continue operating at their peak performance levels",
+import axios from "~/api/axios-drf";
 
-  aboutTitle: "Let's empower employees around the world to speak up!",
-  aboutHelpTitle1: "Bildir",
-  aboutHelpTitle2: "Corporate Platform helps you",
-  aboutHelpItem1: "Create a more ethical and transparent corporate culture",
-  aboutHelpItem2: "Early detection of potential issues",
-  aboutHelpItem3: "Mitigation of legal and financial risks",
-  aboutHelpItem4: "Improved internal controls and governance",
-  aboutHelpItem5: "Increased employee morale and loyalty",
-  aboutOfferTitle:
-    "We offer programs for Employee Assistance and Workplace welfare to assist you in achieving:",
-  aboutOfferItem1:
-    "Maintain your workforce's health, attention, and productivity",
-  aboutOfferItem2:
-    "Private/ Secure crises management  and change with assurance",
-  aboutOfferItem3: "Increase happiness, engagement, cooperation at work",
-  howTitle: "How it works",
-  howSubTitle:
-    "Bildir is a channel for employees to anonymously disclose suggestions, problems, concerns, misconduct and abuse. Bildir helps to build a culture of transparency and openness in organizations and to stop bullying and harassment",
-  howContent:
-    "“Opening up may be difficult and challenging , which is why Bildir's Corporate platform provide opportunities to be heard without judgment. This allows us to become sole corporate entity capable of resolving internal conflicts, having meaningful conversations, and builds better connections”",
-  benifitsTitle: "Benefits from our platform",
-  benifitsItem1: "Sign up in a minute",
-  benifitsItem2: "Receive reports",
-  benifitsItem3: "Follow up employee",
-  prasing: "Our pricing plans",
-  prasing1Title: "For individuals",
-  prasing2Title: "For startups",
-  prasing3Title: "For big companies",
-  getStart: "Get started",
-  faqTitle: "Frequently asked questions",
-  faqSubTitle: "Everything you need to know about the product",
-  story: "Our story",
-  pricing: "Pricing",
+async function getContent() {
+  axios.defaults.xsrfCookieName = "csrftoken";
+  axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+  const response = await axios.get("landing-page/en");
+  console.log("loaded! en")
+  return response.data;
+}
+
+let content= await getContent();
+
+export default {
+  Introduction: content.Introduction,
+  Howitworks: content.Howitworks,
+  ReportSubmission: content.ReportSubmission,
+  Blog: content.Blog,
+  Adminstration: content.Adminstration,
+  Registration: content.Registration,
+  homeTitle1: content.homeTitle1,
+  homeTitle2: content.homeTitle2,
+  home1: content.home1,
+  home2: content.home2,
+  home3: content.home3,
+  home4: content.home4,
+  aboutTitle: content.aboutTitle,
+  aboutHelpTitle1: content.aboutHelpTitle1,
+  aboutHelpTitle2: content.aboutHelpTitle2,
+  aboutHelpItem1: content.aboutHelpItem1,
+  aboutHelpItem2: content.aboutHelpItem2,
+  aboutHelpItem3: content.aboutHelpItem3,
+  aboutHelpItem4: content.aboutHelpItem4,
+  aboutHelpItem5: content.aboutHelpItem5,
+  aboutOfferTitle: content.aboutOfferTitle,
+  aboutOfferItem1: content.aboutOfferItem1,
+  aboutOfferItem2: content.aboutOfferItem2,
+  aboutOfferItem3: content.aboutOfferItem3,
+  howTitle: content.howTitle,
+  howSubTitle: content.howSubTitle,
+  howContent: content.howContent,
+  benifitsTitle: content.benefitsTitle,
+  benifitsItem1: content.benefitsItem1,
+  benifitsItem2: content.benefitsItem2,
+  benifitsItem3: content.benefitsItem3,
+  prasing: content.pricing,
+  
+  prasing1Title: content.pricing1Title,
+  pricing1Name: content.pricing1Name,
+  pricing1Description: content.pricing1Description,
+  pricing1Header: content.pricing1Header,
+  pricing1Price: content.pricing1Price,
+  pricing1Item1: content.pricing1Item1,
+  pricing1Item2: content.pricing1Item2,
+  pricing1Item3: content.pricing1Item3,
+  pricing1Item4: content.pricing1Item4,
+  pricing1Item5: content.pricing1Item5,
+
+  prasing2Title: content.pricing2Title,
+  pricing2Name: content.pricing2Name,
+  pricing2Description: content.pricing2Description,
+  pricing2Header: content.pricing2Header,
+  pricing2Price: content.pricing2Price,
+  pricing2Item1: content.pricing2Item1,
+  pricing2Item2: content.pricing2Item2,
+  pricing2Item3: content.pricing2Item3,
+  pricing2Item4: content.pricing2Item4,
+  pricing2Item5: content.pricing2Item5,
+
+  prasing3Title: content.pricing3Title,
+  pricing3Name: content.pricing3Name,
+  pricing3Description: content.pricing3Description,
+  pricing3Header: content.pricing3Header,
+  pricing3Price: content.pricing3Price,
+  pricing3Item1: content.pricing3Item1,
+  pricing3Item2: content.pricing3Item2,
+  pricing3Item3: content.pricing3Item3,
+  pricing3Item4: content.pricing3Item4,
+  pricing3Item5: content.pricing3Item5,
+
+  ourBlog:"Our Blog",
+  getStart: content.getStart,
+  faqTitle: content.faqTitle,
+  faqSubTitle: content.faqSubTitle,
+  story: content.story,
+  pricing: content.pricing,
+
 };

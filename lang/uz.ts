@@ -1,49 +1,87 @@
-export default {
-  Introduction: "Kirish",
-  Howitworks: "Bu qanday ishlaydi",
-  ReportSubmission: "Hisobot topshirish",
-  Blog: "Blog",
-  Adminstration: "Ma'muriyat",
-  ContactUs: "Registratsiya",
-  homeTitle1: "Hushtaklash",
-  homeTitle2: "Biznes uchun platforma",
-  home1: "Oson sozlash",
-  home2: "Ma'lumotlarni himoya qilish va anonimlik",
-  home3: "O'zbekistonda birinchi xabar tarqatish platformasi",
-  home4:
-    "Korxonalar va ularning xodimlariga eng yuqori samaradorlik darajasida ishlashni davom ettirishga imkon beruvchi echimlar",
+import axios from "~/api/axios-drf";
 
-  aboutTitle:
-    "Keling, butun dunyo bo'ylab xodimlarga o'z fikrlarini bildirishga imkon beraylik!",
-  aboutHelpTitle1: "Bildir",
-  aboutHelpTitle2: "Korporativ platforma sizga yordam beradi",
-  aboutHelpItem1: "Ko'proq axloqiy va shaffof korporativ madaniyatni yarating",
-  aboutHelpItem2: "Potentsial muammolarni erta aniqlash",
-  aboutHelpItem3: "Huquqiy va moliyaviy xavflarni yumshatish",
-  aboutHelpItem4: "Ichki nazorat va boshqaruv yaxshilandi",
-  aboutHelpItem5: "Xodimlarning ma'naviyati va sadoqati ortdi",
-  aboutOfferTitle:
-    "Biz sizga erishishda yordam berish uchun xodimlarga yordam va ish joyidagi farovonlik dasturlarini taklif qilamiz:",
-  aboutOfferItem1:
-    "Ishchi kuchingizning salomatligi, e'tibori va samaradorligini saqlang",
-  aboutOfferItem2:
-    "Xususiy/Xavfsiz inqirozlarni boshqarish va ishonch bilan o'zgartirish",
-  aboutOfferItem3: "Ishdagi baxtni, faollikni, hamkorlikni oshiring",
-  howTitle: "Bu qanday ishlaydi",
-  howSubTitle:
-    "Bildir - bu xodimlar uchun takliflar, muammolar, tashvishlar, noto'g'ri xatti-harakatlar va suiiste'molliklarni anonim ravishda oshkor qilish uchun kanaldir. Bildir tashkilotlarda shaffoflik va oshkoralik madaniyatini shakllantirishga, bezorilik va ta'qiblarni to'xtatishga yordam beradi",
-  howContent: `"Ochish qiyin va qiyin bo'lishi mumkin, shuning uchun Bildirning Korporativ platformasi hukm qilmasdan eshitish imkoniyatini beradi. Bu bizga ichki nizolarni hal qilishga, mazmunli suhbatlar o'tkazishga va yaxshi aloqalarni o'rnatishga qodir bo'lgan yagona korporativ shaxs bo'lish imkonini beradi"`,
-  benifitsTitle: "Bizning platformamizning afzalliklari",
-  benifitsItem1: "Bir daqiqada ro'yxatdan o'ting",
-  benifitsItem2: "Hisobotlarni qabul qilish",
-  benifitsItem3: "Xodimni kuzatib boring",
-  prasing: "Bizning narx rejalarimiz",
-  prasing1Title: "Jismoniy shaxslar uchun",
-  prasing2Title: "Startaplar uchun",
-  prasing3Title: "Katta kompaniyalar uchun",
-  getStart: "Boshlash",
-  faqTitle: "Ko'p beriladigan savollar",
-  faqSubTitle: "Mahsulot haqida bilishingiz kerak bo'lgan hamma narsa",
-  story: "Bizning hikoyamiz",
-  pricing: "Narxlar",
+async function getContent() {
+  axios.defaults.xsrfCookieName = "csrftoken";
+  axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+  const response = await axios.get("landing-page/uz");
+  console.log("loaded! uz")
+  return response.data;
+}
+
+let content= await getContent();
+
+export default {
+  Introduction: content.Introduction,
+  Howitworks: content.Howitworks,
+  ReportSubmission: content.ReportSubmission,
+  Blog: content.Blog,
+  Adminstration: content.Adminstration,
+  Registration: content.Registration,
+  homeTitle1: content.homeTitle1,
+  homeTitle2: content.homeTitle2,
+  home1: content.home1,
+  home2: content.home2,
+  home3: content.home3,
+  home4: content.home4,
+  aboutTitle: content.aboutTitle,
+  aboutHelpTitle1: content.aboutHelpTitle1,
+  aboutHelpTitle2: content.aboutHelpTitle2,
+  aboutHelpItem1: content.aboutHelpItem1,
+  aboutHelpItem2: content.aboutHelpItem2,
+  aboutHelpItem3: content.aboutHelpItem3,
+  aboutHelpItem4: content.aboutHelpItem4,
+  aboutHelpItem5: content.aboutHelpItem5,
+  aboutOfferTitle: content.aboutOfferTitle,
+  aboutOfferItem1: content.aboutOfferItem1,
+  aboutOfferItem2: content.aboutOfferItem2,
+  aboutOfferItem3: content.aboutOfferItem3,
+  howTitle: content.howTitle,
+  howSubTitle: content.howSubTitle,
+  howContent: content.howContent,
+  benifitsTitle: content.benefitsTitle,
+  benifitsItem1: content.benefitsItem1,
+  benifitsItem2: content.benefitsItem2,
+  benifitsItem3: content.benefitsItem3,
+  prasing: content.pricing,
+  
+  prasing1Title: content.pricing1Title,
+  pricing1Name: content.pricing1Name,
+  pricing1Description: content.pricing1Description,
+  pricing1Header: content.pricing1Header,
+  pricing1Price: content.pricing1Price,
+  pricing1Item1: content.pricing1Item1,
+  pricing1Item2: content.pricing1Item2,
+  pricing1Item3: content.pricing1Item3,
+  pricing1Item4: content.pricing1Item4,
+  pricing1Item5: content.pricing1Item5,
+
+  prasing2Title: content.pricing2Title,
+  pricing2Name: content.pricing2Name,
+  pricing2Description: content.pricing2Description,
+  pricing2Header: content.pricing2Header,
+  pricing2Price: content.pricing2Price,
+  pricing2Item1: content.pricing2Item1,
+  pricing2Item2: content.pricing2Item2,
+  pricing2Item3: content.pricing2Item3,
+  pricing2Item4: content.pricing2Item4,
+  pricing2Item5: content.pricing2Item5,
+
+  prasing3Title: content.pricing3Title,
+  pricing3Name: content.pricing3Name,
+  pricing3Description: content.pricing3Description,
+  pricing3Header: content.pricing3Header,
+  pricing3Price: content.pricing3Price,
+  pricing3Item1: content.pricing3Item1,
+  pricing3Item2: content.pricing3Item2,
+  pricing3Item3: content.pricing3Item3,
+  pricing3Item4: content.pricing3Item4,
+  pricing3Item5: content.pricing3Item5,
+
+  getStart: content.getStart,
+  ourBlog: "Blog",
+  faqTitle: content.faqTitle,
+  faqSubTitle: content.faqSubTitle,
+  story: content.story,
+  pricing: content.pricing,
+
 };
